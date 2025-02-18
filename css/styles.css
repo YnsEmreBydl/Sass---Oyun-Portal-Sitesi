@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.bg-dark {
+  background-color: #14151A;
+}
+.bg-light {
+  background-color: #FEFEFE;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.btn {
+  background-color: #FEFEFE;
+  color: #E51515;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+}
+.btn:hover {
+  background-color: #E51515;
+  color: #FEFEFE;
+  transition: all 0.5s;
+}
+.btn-primary {
+  background-color: #E51515;
+  color: #FEFEFE;
+}
+.btn-primary:hover {
+  background-color: #FEFEFE;
+  color: #E51515;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto Condensed", serif;
+  color: #9F9F9F;
+  background-color: #FEFEFE;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Kanit", serif;
+  color: #FEFEFE;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.top-header {
+  border-bottom: 1px solid #E51515;
+}
+.top-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-header .container .logo h1 {
+  font-size: 5rem;
+  font-family: #14151A;
+  color: #E51515;
+}
+.top-header .container .social-media-menu {
+  display: flex;
+}
+.top-header .container li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.top-header .container li a {
+  font-size: 2rem;
+}
+.top-header .container li:hover a {
+  color: #E51515;
+  transition: all 0.5s;
+}
+.top-header .container .login-area span {
+  display: none;
+}
+
+.nav-header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-header .nav .navbar-list {
+  display: flex;
+}
+.nav-header .nav .navbar-list li {
+  line-height: 8rem;
+  position: relative;
+  transition: all 0.5s;
+}
+.nav-header .nav .navbar-list li .dropdown {
+  position: absolute;
+  background-color: #2a2c37;
+  width: 200%;
+  left: 0;
+  z-index: 10;
+  top: 12rem;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav-header .nav .navbar-list li .dropdown li {
+  line-height: 4rem;
+}
+.nav-header .nav .navbar-list li:hover {
+  background-color: #E51515;
+}
+.nav-header .nav .navbar-list li:hover .dropdown {
+  opacity: 1;
+  top: 8rem;
+  visibility: visible;
+}
+.nav-header .nav .navbar-list a {
+  padding: 0 2rem;
+  font-size: 1.6rem;
+}
+.nav-header .nav .navbar-list .fa-chevron-down {
+  color: #FEFEFE;
+}
+.nav-header .nav .search-area input[type=search], .nav-header .nav .search-area button[type=submit] {
+  border: none;
+  background-color: transparent;
+  color: #FEFEFE;
+}
+.nav-header .nav .search-area input[type=search] {
+  border-bottom: 1px solid #E51515;
+  padding: 0.5rem;
+}
+.nav-header .nav .search-area button[type=submit] {
+  margin-left: -5rem;
+}
+
+.single-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.single-slide h2 {
+  font-size: 10rem;
+  color: #FFB320;
+  background-color: #14151A;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 50rem;
+}/*# sourceMappingURL=styles.css.map */
