@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 @import "abstracts";
 @import "components";
 @import "animations";
+=======
+@import "_abstract";
+@import "_components";
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 
 *,
 *::after,
@@ -17,7 +22,11 @@ html{
 body{
     font-family: $secondary-font;
     color:$gray-color;
+<<<<<<< HEAD
     background-color: $secondary-color
+=======
+    background-color: $light-color
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 }
 
 .container{
@@ -26,6 +35,7 @@ body{
     width: 100%;
 }
 
+<<<<<<< HEAD
 section{
     padding: 8rem 0;
 }
@@ -57,6 +67,8 @@ h4{
     text-transform: uppercase;
 }
 
+=======
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 a{
     text-decoration: none;
     text-transform: uppercase;
@@ -75,12 +87,26 @@ img{
 // Top Header
 
 .top-header{
+<<<<<<< HEAD
   
+=======
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
     border-bottom: 1px solid $primary-color;
     .container{
         @include flex-display(flex, center, space-between);
         
+<<<<<<< HEAD
        
+=======
+        .logo{
+            h1{
+                font-size: 5rem;
+                font-family: $secondary-color;
+                color: $primary-color
+            }
+        }
+
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
         .social-media-menu{
             display: flex;
         }
@@ -110,10 +136,16 @@ img{
 //Nav Header
 
 .nav-header{
+<<<<<<< HEAD
   
     .nav{
         @include flex-display(flex, center, space-between);
       
+=======
+    .nav{
+        @include flex-display(flex, center, space-between);
+
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
         .navbar-list{
             display: flex;
             
@@ -185,6 +217,7 @@ img{
 }
 
 
+<<<<<<< HEAD
 // Main slider
 
 .main-slider{
@@ -449,3 +482,23 @@ img{
 }
 
 
+=======
+.single-slide{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    
+    h2{
+        font-size: 10rem;
+        color: $date-colorgit;
+        background-color: $secondary-color;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        margin-top: 50rem;
+       
+    }
+}
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7

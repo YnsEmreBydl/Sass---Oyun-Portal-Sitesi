@@ -16,6 +16,7 @@
   margin-right: 2rem;
 }
 
+<<<<<<< HEAD
 .text-light {
   color: #FEFEFE;
 }
@@ -32,6 +33,8 @@
   padding: 1rem;
 }
 
+=======
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 .btn {
   background-color: #FEFEFE;
   color: #E51515;
@@ -55,6 +58,7 @@
   color: #E51515;
 }
 
+<<<<<<< HEAD
 .badge {
   border: none;
   padding: 0.2rem 2.4rem;
@@ -112,6 +116,8 @@
     border: 2px solid #E51515;
   }
 }
+=======
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 *,
 *::after,
 *::before {
@@ -127,7 +133,11 @@ html {
 body {
   font-family: "Roboto Condensed", serif;
   color: #9F9F9F;
+<<<<<<< HEAD
   background-color: #14151A;
+=======
+  background-color: #FEFEFE;
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 }
 
 .container {
@@ -136,6 +146,7 @@ body {
   width: 100%;
 }
 
+<<<<<<< HEAD
 section {
   padding: 8rem 0;
 }
@@ -162,6 +173,8 @@ h4 {
   text-transform: uppercase;
 }
 
+=======
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -185,6 +198,14 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+<<<<<<< HEAD
+=======
+.top-header .container .logo h1 {
+  font-size: 5rem;
+  font-family: #14151A;
+  color: #E51515;
+}
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 .top-header .container .social-media-menu {
   display: flex;
 }
@@ -258,6 +279,7 @@ img {
   margin-left: -5rem;
 }
 
+<<<<<<< HEAD
 .main-slider .container {
   max-width: 100%;
 }
@@ -454,4 +476,20 @@ img {
 
 .recent-game-6 {
   grid-area: item-6;
+=======
+.single-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.single-slide h2 {
+  font-size: 10rem;
+  color: #FFB320;
+  background-color: #14151A;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 50rem;
+>>>>>>> ff76274c440628c66ab42c7faf5bd6f586dd5ba7
 }/*# sourceMappingURL=styles.css.map */
