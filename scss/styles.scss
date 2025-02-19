@@ -1,5 +1,6 @@
 @import "abstracts";
 @import "components";
+@import "animations";
 
 *,
 *::after,
@@ -16,7 +17,7 @@ html{
 body{
     font-family: $secondary-font;
     color:$gray-color;
-    background-color: $light-color
+    background-color: $secondary-color
 }
 
 .container{
@@ -25,13 +26,36 @@ body{
     width: 100%;
 }
 
-h2{
+section{
+    padding: 8rem 0;
+}
+
+h1, h2, h3, h4{
     font-family: $primary-font;
+    color: $primary-color;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+h1{
+    font-size: 5rem;
+ 
+}
+
+h2{
+   
     font-size: 5rem;
     color: $light-color;
-    letter-spacing: .5rem;
 
   }
+
+h4{
+    
+   
+    font-size: 2rem;
+    color: $light-color;
+    text-transform: uppercase;
+}
 
 a{
     text-decoration: none;
@@ -56,14 +80,7 @@ img{
     .container{
         @include flex-display(flex, center, space-between);
         
-        .logo{
-            h1{
-                font-size: 5rem;
-                font-family: $secondary-color;
-                color: $primary-color
-            }
-        }
-
+       
         .social-media-menu{
             display: flex;
         }
@@ -197,6 +214,7 @@ img{
               border-bottom: 2px solid $primary-color;
               padding: 10rem 7rem;
               background: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0, .7));
+              animation: mainAni 1.5s ease-out;
 
                 p{
                     font-size: 1.4rem;
@@ -229,6 +247,7 @@ img{
             border-radius: 4rem;
             background-color: transparent;
             transition: all .5s;
+            margin-top: -10rem;
 
             &.active, &:hover{
                 color: $date-color;
@@ -241,16 +260,192 @@ img{
             }
 
             span{
+                
                 font-size: 3rem;
                 font-family: $primary-font;
                 background: transparent !important;
-               
-              
-                
-                
             }
         }
     }
+}
+
+
+// LATEST NEWS
+
+.latest-news{
+    display: flex;
+    background-color: $primary-color;
+    height: 8rem;
+    align-items: center;
+    margin-top: -1rem;
+    border: 1px solid $primary-color;
+   
+
+    &-title{
+        flex-basis: 25%;
+        text-align: right;
+        padding-right: 2rem;
+        font-size: 2rem;
+    }
+
+    &-content{
+        flex-basis: 75%;
+        background-color: $secondary-color;
+        height: 100%;
+
+        .news-ticker{
+            @include flex-display(flex,ceter,space-between);
+            line-height: 8rem;
+            
+
+            p{
+                color: $light-color;
+                font-size: 1.4rem;
+            }
+        }
+        
+    }
+}
+
+
+
+//RECENT GAME SECTION
+
+
+.recent-games{
+   
+    background-color: $secondary-color;
+    
+    .section-title{
+        margin-top: 10rem !important;
+       
+    }
+
+    
+    &-content{
+       
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 4rem;
+        grid-column-gap: 8rem;
+        grid-template-areas: 'item-1 item-1 item-1 item-2'
+                             'item-3 item-4 item-5 item-6';
+
+        
+        .recent-game{
+            
+            width: 100%;
+            height: 100;
+            background-color: rgb(255, 114, 32);
+
+            &-thumbnail{
+                position: relative;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    transition: all .5s;
+                }
+                
+                &::after{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    content: '';
+                    background-color: rgba($primary-color, .6);
+                    width: 100%;
+                    height: 100%;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .5s;
+                }
+
+                &:hover, &:focus{
+                
+                    &::after{
+                        visibility: visible;
+                        opacity: 1;
+
+                        
+                    }
+
+                    img{
+                        transform: scale(1.2) rotate(5deg);
+                    }
+
+                    .rating{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &-content{
+                padding: 3rem;
+                
+
+                .game-title{
+                    margin-bottom: 2rem;
+                    font-size: 2rem;
+                    color: $secondary-color;
+                  
+                    a{
+                        color: $secondary-color;
+
+                        &:hover{
+                            transition: all .4s;
+                            color: $light-color;
+                        }
+                    }
+                }
+
+                .game-date{
+                    margin-bottom: 2rem;
+                    display: inline-block;
+                    color: $secondary-color;
+                    font-size: 1.5rem;
+                    text-decoration: underline;
+                    
+                }
+               
+
+                p{
+                    font-size: 1.3rem;
+                    line-height: 1.8;
+                    color: $secondary-color;
+                }
+
+                .game-meta{
+                    @include flex-display(flex, center, space-between);
+                }
+            }
+           
+        }
+    }
+}
+
+.recent-game-1{
+    grid-area: item-1;
+}
+
+.recent-game-2{
+    grid-area: item-2;
+}
+
+.recent-game-3{
+    grid-area: item-3;
+}
+
+.recent-game-4{
+    grid-area: item-4;
+}
+
+.recent-game-5{
+    grid-area: item-5;
+}
+
+.recent-game-6{
+    grid-area: item-6;
 }
 
 

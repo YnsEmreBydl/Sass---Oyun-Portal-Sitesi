@@ -36,6 +36,23 @@ $light-color:#FEFEFE;
     }
 }
 
+.text-light{
+    color: $light-color;
+}
+
+.text-primary{
+    color: $primary-color;
+}
+
+.text-secondary{
+    color: $secondary-color;
+    font-weight: 600;
+    font-family: $primary-font;
+    background-color: $light-color;
+    padding: 1rem;
+}
+
+
 // Mixin
 
 @mixin flex-display($display, $align-items, $justify-content){
